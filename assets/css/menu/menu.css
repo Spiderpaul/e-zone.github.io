@@ -1,0 +1,148 @@
+.menu__container__principal{
+    /* background: #0072C6; */
+    background: #FFA500;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.color{
+    background: #0072C6;
+    width: 100%;
+    height: 5px;
+}
+.menu__container__logo{
+    width: 33%;
+    height: auto;
+    display: flex;
+    justify-content: cen;
+}
+
+.menu__logo{
+    width: 150px;
+    margin-left: 10%;
+}
+
+.menu__container__searcher{
+    width: 33%;
+    height: auto;
+    display: flex;
+}
+
+.menu__searcher{
+    color: #3E3E53;
+    width: 90%;
+    height: 30px;
+    border: none;
+    border-radius: 15px 0 0 15px;
+}
+
+
+.menu__btn__searcher{
+    background: white;
+    width: 10%;
+    height: auto;
+    border: none;
+    border-radius: 0 15px 15px 0;
+}
+
+.menu__btn__searcher:hover{
+    background: #0072C6;
+    color: white;
+    cursor: pointer;
+}
+
+.menu__container__btn{
+    width: 33%;
+    height: auto;
+    display: flex;
+    justify-content: end;
+}
+
+.menu__btn__login{
+    width: 100px;
+    height: 30px;
+    margin-right: 10%;
+    border: none;
+    border-radius: 15px;
+}
+
+.menu__spam__login{
+    color: #3E3E53;
+    font-weight: 700;
+}
+
+.menu__btn__login:hover{
+    background: #0072C6;
+    cursor: pointer;
+}
+
+.menu__btn__login:hover .menu__spam__login{
+    color: white;
+}
+
+@media (max-width: 1000px){
+    .menu__container__logo{
+        width: 30%;
+    }
+    
+    .menu__container__searcher{
+        width: 40%;
+    }
+
+    .menu__container__btn{
+        width: 30%;
+    }
+}
+
+@media (max-width: 800px){
+    .menu__container__logo{
+        width: 30%;
+    }
+    
+    .menu__container__searcher{
+        width: 20%;
+        order: 1;
+        justify-content: end;
+    }
+
+    .menu__searcher{
+        display: none;
+    }
+
+    .menu__btn__searcher{
+        width: 30px;
+        height: 30px;
+        margin-right: 20%;
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .menu__container__btn{
+        width: 30%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 450px){
+    .menu__container__logo{
+        width: auto;
+    }
+
+    .menu-logo{
+        margin-right: 30px;
+    }
+
+    .menu__container__searcher{
+        width: 10%;
+    }
+
+    .menu__container__btn{
+        width: 30%;
+        justify-content: end;
+    }
+}
