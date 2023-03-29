@@ -90,6 +90,10 @@
     margin: 0 5px;
 }
 
+.carousel__radio:hover{
+    cursor: pointer;
+}
+
 /* #radio1:checked ~ #item1{
     margin-top: 0;
 } 
@@ -107,4 +111,32 @@
     
 }
 
+@media (max-width: 835px){
+    .carousel__container__items{
+        height: 180px;
+    }
 
+    .carousel__container__radio{
+        height: 155px;
+    }
+}
+
+@media (max-width: 600px){
+    .carousel__container__items{
+        height: 120px;
+    }
+
+    .carousel__container__radio{
+        height: 100px;
+    }
+}
+
+@media (max-width: 410px){
+    .carousel__container__items{
+        height: 80px;
+    }
+
+    .carousel__container__radio{
+        height: 60px;
+    }
+}

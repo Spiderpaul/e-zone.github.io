@@ -4,4 +4,5 @@
 
 body{
     width: 100%;
+    min-width: 314px;
 }
