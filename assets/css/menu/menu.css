@@ -49,9 +49,12 @@
 }
 
 .menu__btn__searcher:hover{
-    background: #0072C6;
-    color: white;
+    background: #FFA500;
     cursor: pointer;
+}
+
+.menu__btn__searcher:hover .material-symbols-outlined{
+    color: white;
 }
 
 .menu__container__btn{
@@ -62,6 +65,7 @@
 }
 
 .menu__btn__login{
+    background: #3E3E53;
     width: 100px;
     height: 30px;
     margin-right: 10%;
@@ -70,12 +74,12 @@
 }
 
 .menu__spam__login{
-    color: #3E3E53;
+    color: white;
     font-weight: 700;
 }
 
 .menu__btn__login:hover{
-    background: #0072C6;
+    background: #FFA500;
     cursor: pointer;
 }
 

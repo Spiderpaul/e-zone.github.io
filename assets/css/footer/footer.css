@@ -1,0 +1,18 @@
+.footer{
+    background: #3E3E53;
+    width: 100%;
+    height: auto;
+}
+
+.footer__container{
+    width: 50%;
+    height: 60px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__text{
+    color: white;
+}
