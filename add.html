@@ -37,10 +37,14 @@
             <div class="add__container__form">
                 <form class="add__form" action="" method="POST" data-form-add>
                     <h4 class="add__title">Agregar nuevo producto</h4>
-                    <input type="text" class="add__input" placeholder="URL de imagen" data-img>
-                    <input type="text" class="add__input" placeholder="Categoría" data-categoria>
+                    <input type="file" class="add__file" placeholder="URL de imagen" data-img>
+                    <select name="" class="add__select" id="select-categoria">
+                        <option value="seleccionar" selected disabled>Selecciona una opción</option>
+                        <option value="consolas">Consolas</option>
+                        <option value="laptops">Laptops</option>
+                    </select>
                     <input type="text" class="add__input" placeholder="Nombre del producto" data-nombre>
-                    <input type="text" class="add__input" placeholder="Precio del producto" data-precio>
+                    <input type="number" class="add__input" placeholder="Precio del producto" data-precio>
                     <input type="text" class="add__input" placeholder="Descripción" data-descripcion>
                     <button class="add__btn" data-btn-iniciar>Agregar producto</button>
                 </form>
@@ -50,30 +54,8 @@
     
 
     <section class="contact__section">
-        <div class="contact__container">
-            <div class="contact__subcontainer">
-                <div class="contact__container__logo">
-                    <img src="assets/img/e-zone.png" alt="" class="contact__logo">
-                </div>
-                <div class="contact__container__links">
-                    <a href="" class="contact__link">Quiénes somos</a>
-                    <a href="" class="contact__link">Política de privacidad</a>
-                    <a href="" class="contact__link">Programa de fidelidad</a>
-                    <a href="" class="contact__link">Nuestras tiendas</a>
-                    <a href="" class="contact__link">Quiero ser franquiciado</a>
-                    <a href="" class="contact__link">Anúncie aquí</a>
-                </div>
-            </div>
-            <div class="contact__container__form">
-                <form action="" class="contact__form">
-                    <h4 for="" class="contact__form__label">
-                        Hable con nosotros
-                    </h4>
-                    <input type="text" class="contact__form__name" name="contact-input" placeholder="Nombre">
-                    <textarea class="contact__form__textarea" name="contact-textarea" id="" cols="30" rows="10" placeholder="Escribe tu mensaje"></textarea>
-                    <button class="contact__form__button">Enviar mensaje</button>
-                </form>
-            </div>
+        <div class="contact__container" data-contact>
+
         </div>
     </section>
     <footer class="footer">
@@ -82,6 +64,7 @@
         </div>
     </footer>
 
-    
+    <script src="vistas/section-contact.js"></script>
+    <script type="module" src="controller/add.controller.js"></script>
 </body>
 </html>

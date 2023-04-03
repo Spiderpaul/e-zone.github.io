@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "firebase": "^8.10.1",
+    "json-server": "^0.17.3"
+  }
+}

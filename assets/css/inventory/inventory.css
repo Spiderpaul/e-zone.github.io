@@ -1,0 +1,146 @@
+.inventory__container{
+    width: 100%;
+    height: auto;
+}
+
+.inventory__bar{
+    width: 95%;
+    height: 25px;
+    margin: 0 auto;
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inventory__container__title{
+    width: 30%;
+    height: auto;
+}
+
+.inventory__title{
+    color: #0072C6;
+    font-size: 22px;
+    font-weight: 800;
+}
+
+.inventory__container__select{
+    width: 30%;
+    height: auto;
+    text-align: center;
+}
+
+.inventory__select{
+    color: #0072C6;
+    width: 80%;
+    height: 35px;
+    border: 2px solid #0072C6;
+    border-radius: 2px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.inventory__container__add{
+    width: 30%;
+    height: auto;
+    text-align: right;
+}
+
+.inventory__add__btn{
+    background: #0072C6;
+    color: white;
+    height: 35px;
+    border: none;
+    border-radius: 2px;
+}
+
+/*                                           Tarjetas e imágen                                  */
+.inventory__container__line{
+    width: 95%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px 20px;
+    margin: 0 auto;
+}
+
+.inventory__card{
+    background: white;
+    width: 15%;
+    height: auto;
+    display: flex;
+    padding: 2px;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 2px;
+    box-shadow: 0 0 14px 1px rgba(123, 144, 253, 0.2);
+}
+
+.inventory__card .hidden{
+    display: block;
+}
+
+.inventory__img{
+    width: 90%;
+    border-radius: 2px;
+    margin-top: 5%;
+    box-shadow: 0 0 1px 1px rgba(123, 144, 253, 0.2);
+}
+
+.inventory__card:hover{
+    box-shadow: 0 0 14px 1px rgba(248, 186, 14, 1);
+    cursor: pointer;
+}
+
+/*                                           Datos del artículo                                  */
+.inventory__container__data{
+    width: 90%;
+    height: 100px;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.inventory__data__name{
+    margin: 0;
+    font-size: 20px;
+}
+
+.inventory__data__price{
+    margin: 0;
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.inventory__data__link{
+    text-decoration: none;
+    font-size: 18px;
+}
+
+@media (max-width: 1300px){
+    .inventory__card{
+        width: 20%;
+    }
+}
+
+@media (max-width: 800px){
+    .inventory__card{
+        width: 25%;
+    }
+}
+
+@media (max-width: 600px){
+    .inventory__card{
+        width: 40%;
+    }
+}
+
+@media (max-width: 500px){
+    .crud__card{
+        width: 45%;
+    }
+}

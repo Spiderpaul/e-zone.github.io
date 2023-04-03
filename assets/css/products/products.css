@@ -1,6 +1,8 @@
 .products__container{
     width: 100%;
     height: auto;
+    min-height: 40vh;
+    padding-bottom: 80px;
 }
 
 .products__bar{
@@ -53,8 +55,17 @@
     margin: 0 auto;
 }
 
+/* .color__blur{
+    background: #0072C6;
+    position: absolute;
+    width: 15%;
+    height: auto;
+    margin: auto;
+    filter: blur(30px);
+} */
+
 .products__card{
-    background: white;
+    position: relative;
     width: 15%;
     height: auto;
     display: flex;
@@ -62,10 +73,37 @@
     flex-direction: column;
     align-items: center;
     border-radius: 2px;
-    box-shadow: 0 0 14px 1px rgba(77, 77, 77, 0.3);
+    box-shadow: 0 0 1px 1px rgba(123, 144, 253, 0.2);
 }
 
-.hidden{
+.products__btn{
+    background: #FFA500;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    z-index: 1;
+    visibility: hidden;
+    box-shadow: 0 0 5px 1px rgba(123, 144, 253, 0.2);
+    cursor: pointer;
+}
+
+.material-symbols-outlined{
+    color: white;
+}
+
+.products__card:hover .products__btn{
+    visibility: visible;
+}
+
+.products__btn:hover{
+    background: #0072C6;
+}
+
+.products__card .hidden{
     display: block;
 }
 
@@ -73,13 +111,14 @@
     width: 90%;
     border-radius: 2px;
     margin-top: 5%;
-    box-shadow: 0 0 1px 1px rgba(0, 114, 198, 0.3);
+    box-shadow: 0 0 1px 1px rgba(123, 144, 253, 0.2);
 }
 
 .products__card:hover{
-    box-shadow: 0 0 14px 1px rgba(248, 186, 14, 1);
-    cursor: pointer;
+    box-shadow: 0 0 10px 1px rgba(123, 144, 253, 0.2);
 }
+
+
 
 /*                                           Datos del artículo                                  */
 .products__container__data{
@@ -93,19 +132,38 @@
 }
 
 .Products__data__name{
-    margin: 0;
+    margin: auto;
     font-size: 20px;
 }
 
 .products__data__price{
     margin: 0;
     font-size: 24px;
-    margin: 10px 0;
+    margin: 10px auto;
 }
 
-.products__data__link{
-    text-decoration: none;
-    font-size: 18px;
+.products__btn__watch{
+    background: #0072C6;
+    color: white;
+    width: 80%;
+    height: 40px;
+    margin: auto;
+    border: none;
+    border-radius: 20px;
+    align-self: flex-end;
+}
+
+.products__btn__watch:hover{
+    background: #FFA500;
+    cursor: pointer;
+}
+
+@media (min-width: 1800px) {
+       
+    .products__btn{
+        width: 60px;
+        height: 60px;
+    }
 }
 
 @media (max-width: 1200px) {

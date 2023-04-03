@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="assets/css/resetearvalores.css">
     <link rel="stylesheet" href="assets/css/base.css">
     <link rel="stylesheet" href="assets/css/menu/menu.css">
-    <link rel="stylesheet" href="assets/css/crud/crud.css">
+    <link rel="stylesheet" href="assets/css/inventory/inventory.css">
     <link rel="stylesheet" href="assets/css/contact/contact.css">
     <link rel="stylesheet" href="assets/css/footer/footer.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
@@ -32,47 +32,26 @@
         <div class="color"></div>
     </header>
 
-    <section class="crud__section">
-        <div class="crud__container">
-            <div class="crud__bar">
-                <div class="crud__container__title">
-                    <Label class="crud__title">PRODUCTOS</Label>
+    <section class="inventory__section">
+        <div class="inventory__container">
+            <div class="inventory__bar">
+                <div class="inventory__container__title">
+                    <Label class="inventory__title">PRODUCTOS</Label>
                 </div>
-                <div class="crud__container__add">
-                    <button href="#" class="crud__add__btn" data-add-btn>Agregar Producto</button>
+                <div class="inventory__container__select">
+                    <select name="" class="inventory__select" id="" data-select-inventory>
+                        <option value="Completo" selected>Ver todo</option>
+                        <option value="Consolas">Ver consolas</option>
+                        <option value="Laptops">Ver laptops</option>
+                    </select>
+                </div>
+                <div class="inventory__container__add">
+                    <button href="#" class="inventory__add__btn" data-add-btn>Agregar Producto</button>
                 </div>
 
             </div>
-            <div class="crud__container__line">
-                <div class="crud__card">
-                    <img src="assets/img/productos/consolas/consolas1.jpg" alt="" class="crud__img">
-                    <div class="crud__container__data">
-                        <label for="" class="crud__data__name">Xbox Series X</label>
-                        <h4 class="crud__data__price">$15.000</h4>
-                        <a href="#" class="crud__data__link">Ver producto</a>
-                    </div>
-                </div>
-                <div class="crud__card">
-                    <img src="assets/img/productos/consolas/consolas1.jpg" alt="" class="crud__img">
-                </div>
-                <div class="crud__card">
-                    <img src="assets/img/productos/consolas/consolas1.jpg" alt="" class="crud__img">
-                </div>
-                <div class="crud__card">
-                    <img src="assets/img/productos/consolas/consolas1.jpg" alt="" class="crud__img">
-                </div>
-                <div class="crud__card hidden">
-                    <img src="assets/img/productos/consolas/consolas1.jpg" alt="" class="crud__img">
-                </div>
-                <div class="crud__card hidden">
-                    <img src="assets/img/productos/consolas/consolas1.jpg" alt="" class="crud__img">
-                </div>
-                <div class="crud__card hidden">
-                    <img src="assets/img/productos/consolas/consolas1.jpg" alt="" class="crud__img">
-                </div>
-                <div class="crud__card hidden">
-                    <img src="assets/img/productos/consolas/consolas1.jpg" alt="" class="crud__img">
-                </div>
+            <div class="inventory__container__line" data-inventory>
+                
             </div>
         </div>
         
@@ -80,30 +59,8 @@
     
 
     <section class="contact__section">
-        <div class="contact__container">
-            <div class="contact__subcontainer">
-                <div class="contact__container__logo">
-                    <img src="assets/img/e-zone.png" alt="" class="contact__logo">
-                </div>
-                <div class="contact__container__links">
-                    <a href="" class="contact__link">Quiénes somos</a>
-                    <a href="" class="contact__link">Política de privacidad</a>
-                    <a href="" class="contact__link">Programa de fidelidad</a>
-                    <a href="" class="contact__link">Nuestras tiendas</a>
-                    <a href="" class="contact__link">Quiero ser franquiciado</a>
-                    <a href="" class="contact__link">Anúncie aquí</a>
-                </div>
-            </div>
-            <div class="contact__container__form">
-                <form action="" class="contact__form">
-                    <h4 for="" class="contact__form__label">
-                        Hable con nosotros
-                    </h4>
-                    <input type="text" class="contact__form__name" name="contact-input" placeholder="Nombre">
-                    <textarea class="contact__form__textarea" name="contact-textarea" id="" cols="30" rows="10" placeholder="Escribe tu mensaje"></textarea>
-                    <button class="contact__form__button">Enviar mensaje</button>
-                </form>
-            </div>
+        <div class="contact__container" data-contact>
+            
         </div>
     </section>
     <footer class="footer">
@@ -112,6 +69,8 @@
         </div>
     </footer>
 
+    <script src="vistas/section-contact.js"></script>
     <script src="js/to-add-product.js"></script>
+    <script type="module" src="controller/inventory.controller.js"></script>
 </body>
 </html>

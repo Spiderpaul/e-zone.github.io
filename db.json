@@ -1,0 +1,102 @@
+{
+  "consolas": [
+    {
+      "id": 1,
+      "url": "assets/img/productos/consolas/xboxx.jpg",
+      "categoria": "consolas",
+      "nombre": "xbox series x",
+      "precio": 15000,
+      "descripcion": "Consola Xbox Series X. Texto de relleno."
+    },
+    {
+      "id": 2,
+      "url": "assets/img/productos/consolas/xboxs.jpg",
+      "categoria": "consolas",
+      "nombre": "xbox series s",
+      "precio": 5900,
+      "descripcion": "Consola Xbox Series s. Texto de relleno."
+    },
+    {
+      "id": 3,
+      "url": "assets/img/productos/consolas/play5.jpg",
+      "categoria": "consolas",
+      "nombre": "Play Station 5",
+      "precio": 14000,
+      "descripcion": "Consola Play Station 5. Texto de relleno."
+    },
+    {
+      "id": 4,
+      "url": "assets/img/productos/consolas/switch.jpg",
+      "categoria": "consolas",
+      "nombre": "Switch",
+      "precio": 5000,
+      "descripcion": "Consola Nintendo Switch. Texto de relleno."
+    },
+    {
+      "id": 5,
+      "url": "assets/img/productos/consolas/switchlite.jpg",
+      "categoria": "consolas",
+      "nombre": "Switch Lite",
+      "precio": 4000,
+      "descripcion": "Consola Nintendo Switch Lite. Texto de relleno."
+    },
+    {
+      "id": 6,
+      "url": "assets/img/productos/consolas/switcholed.jpg",
+      "categoria": "consolas",
+      "nombre": "Switch Oled",
+      "precio": 6000,
+      "descripcion": "Consola Nintendo Switch Oled. Texto de relleno."
+    }
+  ],
+  "laptops": [
+    {
+      "id": 1,
+      "url": "assets/img/productos/laptops/hpi7.jpg",
+      "categoria": "laptops",
+      "nombre": "HP i7",
+      "precio": 14000,
+      "descripcion": "Laptop marca fulana, texto de prueba."
+    },
+    {
+      "id": 2,
+      "url": "assets/img/productos/laptops/hpi5.jpg",
+      "categoria": "laptops",
+      "nombre": "HP i5",
+      "precio": 10000,
+      "descripcion": "Laptop marca fulana, texto de prueba."
+    },
+    {
+      "id": 3,
+      "url": "assets/img/productos/laptops/asusgamer.jpg",
+      "categoria": "laptops",
+      "nombre": "Asus Gamer",
+      "precio": 17000,
+      "descripcion": "Laptop marca fulana, texto de prueba."
+    },
+    {
+      "id": 4,
+      "url": "assets/img/productos/laptops/asusi5.jpg",
+      "categoria": "laptops",
+      "nombre": "Asus i5",
+      "precio": 9000,
+      "descripcion": "Laptop marca fulana, texto de prueba."
+    },
+    {
+      "id": 5,
+      "url": "assets/img/productos/laptops/acergamer.jpg",
+      "categoria": "laptops",
+      "nombre": "Acer Gamer",
+      "precio": 15000,
+      "descripcion": "Laptop marca fulana, texto de prueba."
+    },
+    {
+      "id": 6,
+      "url": "assets/img/productos/laptops/aceri7.jpg",
+      "categoria": "laptops",
+      "nombre": "Acer i5",
+      "precio": 10000,
+      "descripcion": "Laptop marca fulana, texto de prueba."
+    }
+  ]
+}

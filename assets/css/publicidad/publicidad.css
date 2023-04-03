@@ -1,0 +1,28 @@
+.publicidad{
+    position: relative;
+    background: url("../../img/publicidad/paisaje.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 300px;
+}
+
+.publicidad__texto{
+    width: 70%;
+    margin-left: 5%;
+    margin-top: 60px;
+}
+
+.publicidad__flotante{
+    height: 320px;
+    position: absolute;
+    top: 5px;
+    right: 200px;
+}
+
+@media (max-width: 840px){
+    .publicidad__flotante{
+        right: 20px;
+    }
+}
