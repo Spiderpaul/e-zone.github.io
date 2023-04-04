@@ -37,15 +37,15 @@
             <div class="add__container__form">
                 <form class="add__form" action="" method="POST" data-form-add>
                     <h4 class="add__title">Agregar nuevo producto</h4>
-                    <input type="file" class="add__file" placeholder="URL de imagen" data-img>
-                    <select name="" class="add__select" id="select-categoria">
+                    <input type="file" name="url" class="add__file" id="add-url" placeholder="URL de imagen">
+                    <select name="categoria" class="add__select" id="select-categoria">
                         <option value="seleccionar" selected disabled>Selecciona una opción</option>
                         <option value="consolas">Consolas</option>
                         <option value="laptops">Laptops</option>
                     </select>
-                    <input type="text" class="add__input" placeholder="Nombre del producto" data-nombre>
-                    <input type="number" class="add__input" placeholder="Precio del producto" data-precio>
-                    <input type="text" class="add__input" placeholder="Descripción" data-descripcion>
+                    <input type="text" name="nombre" class="add__input" id="add-nombre" placeholder="Nombre del producto">
+                    <input type="number" name="precio" class="add__input" id="add-precio" placeholder="Precio del producto">
+                    <input type="text" name="descripcion" class="add__input" id="add-descripcion" placeholder="Descripción">
                     <button class="add__btn" data-btn-iniciar>Agregar producto</button>
                 </form>
             </div>

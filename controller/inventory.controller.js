@@ -6,12 +6,27 @@ const crearInventario = (id, url, categoria, nombre, precio, descripcion) => {
    
     const contenido = `<img src="${url}" alt="" class="inventory__img">
                         <div class="inventory__container__data">
+                            <label class="inventory__data__categoria" id="${categoria}">${categoria}</label>
                             <label for="" class="inventory__data__name">${nombre}</label>
                             <h4 class="inventory__data__price">${precio}</h4>
-                            <a href="#" class="inventory__data__link">Ver producto</a>
+                            <button type="button" class="inventory__delete" id="${id}">X</button> 
                         </div>`;
 
     tarjeta.innerHTML = contenido;
+
+    let btnEliminar = tarjeta.querySelector("button");
+    let categoriaProducto = tarjeta.querySelector(".inventory__data__categoria");
+
+    btnEliminar.addEventListener("click", async () => {
+        let id = btnEliminar.id;
+        let idCategoria = categoriaProducto.id;
+        try{
+            const respuesta = await productoServices.eliminarProducto(id, idCategoria);
+            console.log(respuesta);
+        }catch(error){
+            console.error(error);
+        }
+    })
 
     return tarjeta;
 }

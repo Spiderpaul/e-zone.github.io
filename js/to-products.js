@@ -1,7 +1,7 @@
 const formIniciar = document.querySelector("[data-form-login]");
 const email = document.querySelector("[data-email]");
 const pass = document.querySelector("[data-password]");
-const btnIniciar = document.querySelector("[data-btn-iniciar]");
+
 
 formIniciar.addEventListener("submit", (event) => {
     event.preventDefault();

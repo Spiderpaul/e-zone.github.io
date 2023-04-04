@@ -121,6 +121,10 @@
     font-size: 18px;
 }
 
+.inventory__data__categoria{
+    display: none;
+}
+
 @media (max-width: 1300px){
     .inventory__card{
         width: 20%;
