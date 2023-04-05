@@ -117,7 +117,7 @@ export const detallesProducto = async (id) =>{
         const laptopsResponse = fetch(`http://localhost:3000/laptops/${id}`);
 
         const [consolasProducto, laptopsProducto] = await Promise.all([consolasResponse, laptopsResponse]);
-
+        
         if (consolasProducto.status === 404 && laptopsProducto.status === 404) {
         throw new Error('Producto no encontrado');
         }
