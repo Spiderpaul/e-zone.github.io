@@ -1,11 +1,12 @@
 import { productoServices } from "../services/product-services.js";
 
 //Creando tarjetas de productos por medio del DOM
-const crearNuevaConsola = (id, url, categoria, nombre, precio, descripcion) => {
-    const tarjeta = document.createElement("div");
-    tarjeta.classList.add("products__card");
-    tarjeta.setAttribute("id", `card${id}`);
-    if(id <= 6){
+const crearNuevaConsola = (count, id, url, categoria, nombre, precio, descripcion) => {
+    if(count <= 6){
+        const tarjeta = document.createElement("div");
+        tarjeta.classList.add("products__card");
+        tarjeta.setAttribute("id", `card${count}`);
+    
         const contenido = ` <button class="products__btn">
                                 <span class="material-symbols-outlined">shopping_cart</span>   
                             </button>
@@ -17,22 +18,23 @@ const crearNuevaConsola = (id, url, categoria, nombre, precio, descripcion) => {
                             </div>`;
     
         tarjeta.innerHTML = contenido;
-        
-        if(id > 4){
+
+        if(count > 4){
             tarjeta.classList.add("hidden");
         }
 
+        return tarjeta;
+    }else{
+        
     }
-
-    return tarjeta;
 }
 
-const crearNuevaLaptop = (id, url, categoria, nombre, precio, descripcion) => {
-    const tarjeta = document.createElement("div");
-    tarjeta.classList.add("products__card");
-    tarjeta.setAttribute("id", id);
-
-    if(id <= 6){
+const crearNuevaLaptop = (count, id, url, categoria, nombre, precio, descripcion) => {
+    if(count <= 6){
+        const tarjeta = document.createElement("div");
+        tarjeta.classList.add("products__card");
+        tarjeta.setAttribute("id", `card${count}`);
+    
         const contenido = ` <button class="products__btn">
                                 <span class="material-symbols-outlined">shopping_cart</span>   
                             </button>
@@ -45,27 +47,33 @@ const crearNuevaLaptop = (id, url, categoria, nombre, precio, descripcion) => {
     
         tarjeta.innerHTML = contenido;
         
-        if (id > 4){
+        if (count > 4){
             tarjeta.classList.add("hidden");
         }
-    }
+        
+        return tarjeta;
+    }else{
 
-    return tarjeta;
+    }
 }
 
 const consolas = document.querySelector("[data-container-console]");
 const laptops = document.querySelector("[data-container-laptop]");
 
 productoServices.listaConsolas().then((data) => {
+    let count = 0;
     data.forEach(({id, url, categoria, nombre, precio, descripcion}) => {
-            const nuevaConsola = crearNuevaConsola(id, url, categoria, nombre, precio, descripcion);
-            consolas.appendChild(nuevaConsola);
+        count++;
+        const nuevaConsola = crearNuevaConsola(count, id, url, categoria, nombre, precio, descripcion);
+        consolas.appendChild(nuevaConsola);
     });
 });
 
 productoServices.listaLaptops().then((data) => {
+    let count = 0;
     data.forEach(({id, url, categoria, nombre, precio, descripcion}) => {
-        const nuevaLaptop = crearNuevaLaptop(id, url, categoria, nombre, precio, descripcion);
+        count++;
+        const nuevaLaptop = crearNuevaLaptop(count, id, url, categoria, nombre, precio, descripcion);
         laptops.appendChild(nuevaLaptop);
     })
 });

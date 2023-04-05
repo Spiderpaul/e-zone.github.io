@@ -12,8 +12,14 @@ formAdd.addEventListener("submit", async (event) => {
     const descripcion = document.querySelector("#add-descripcion").value;
     
     let id = getUUID();
-    let urlFile = `assets/img/productos/consolas/${url.files[0].name}`;
+    let urlFile;
     let precio = parseInt(precioadd);
+
+    if(categoria == "consolas"){
+        urlFile = `assets/img/productos/consolas/${url.files[0].name}`;
+    }else if(categoria == "laptops"){
+        urlFile = `assets/img/productos/laptops/${url.files[0].name}`;
+    }
     
 
     try {

@@ -1,102 +1,118 @@
 {
   "consolas": [
     {
-      "id": 1,
+      "id": "9b579bbf-f07a-47c8-9cc5-a80cecd3541b",
       "url": "assets/img/productos/consolas/xboxx.jpg",
       "categoria": "consolas",
-      "nombre": "xbox series x",
+      "nombre": "Xbox Series X",
       "precio": 15000,
-      "descripcion": "Consola Xbox Series X. Texto de relleno."
+      "descripcion": "Xbox Series X, descripción del producto"
     },
     {
-      "id": 2,
+      "id": "f9bda4f1-4b37-46d3-b20f-a9b7de45a121",
       "url": "assets/img/productos/consolas/xboxs.jpg",
       "categoria": "consolas",
-      "nombre": "xbox series s",
-      "precio": 5900,
-      "descripcion": "Consola Xbox Series s. Texto de relleno."
+      "nombre": "Xbox Series S",
+      "precio": 6500,
+      "descripcion": "Xbox Series S, descripción del producto"
     },
     {
-      "id": 3,
+      "id": "f68dd351-fecb-4430-be24-1435f988bbf0",
       "url": "assets/img/productos/consolas/play5.jpg",
       "categoria": "consolas",
-      "nombre": "Play Station 5",
-      "precio": 14000,
-      "descripcion": "Consola Play Station 5. Texto de relleno."
+      "nombre": "Play Station 5 ",
+      "precio": 14500,
+      "descripcion": "Play Station 5, descripción del producto"
     },
     {
-      "id": 4,
+      "id": "c3b8a011-2744-430d-a49d-337dff24bd6d",
       "url": "assets/img/productos/consolas/switch.jpg",
       "categoria": "consolas",
       "nombre": "Switch",
-      "precio": 5000,
-      "descripcion": "Consola Nintendo Switch. Texto de relleno."
+      "precio": 9000,
+      "descripcion": "Nintendo Switch, descripción del producto"
     },
     {
-      "id": 5,
+      "id": "a414b531-96e0-4dc6-914d-a644029e91d2",
       "url": "assets/img/productos/consolas/switchlite.jpg",
       "categoria": "consolas",
       "nombre": "Switch Lite",
-      "precio": 4000,
-      "descripcion": "Consola Nintendo Switch Lite. Texto de relleno."
+      "precio": 4500,
+      "descripcion": "Nintendo Witch lite, descripción del producto"
     },
     {
-      "id": 6,
+      "id": "fe8222a8-23ef-456d-b4e1-495852f69db0",
       "url": "assets/img/productos/consolas/switcholed.jpg",
       "categoria": "consolas",
-      "nombre": "Switch Oled",
-      "precio": 6000,
-      "descripcion": "Consola Nintendo Switch Oled. Texto de relleno."
+      "nombre": "Switch Oled ",
+      "precio": 11000,
+      "descripcion": "Nintendo Switch Oled, descripción del producto"
+    },
+    {
+      "id": "ff02cdc3-18a2-48dc-9e14-5bab5b4e52a1",
+      "url": "assets/img/productos/consolas/play5digital.jpg",
+      "categoria": "consolas",
+      "nombre": "Play Station 5 Digital",
+      "precio": 10000,
+      "descripcion": "Play Station 5 Digital, descripción del producto"
     }
   ],
   "laptops": [
     {
-      "id": 1,
+      "id": "37031d10-3810-42f0-9605-a669d4d3334a",
       "url": "assets/img/productos/laptops/hpi7.jpg",
       "categoria": "laptops",
       "nombre": "HP i7",
-      "precio": 14000,
-      "descripcion": "Laptop marca fulana, texto de prueba."
+      "precio": 16000,
+      "descripcion": "Laptop HP i7"
     },
     {
-      "id": 2,
+      "id": "e33d531c-a528-4f9d-a098-ec7b52fab5db",
       "url": "assets/img/productos/laptops/hpi5.jpg",
       "categoria": "laptops",
       "nombre": "HP i5",
-      "precio": 10000,
-      "descripcion": "Laptop marca fulana, texto de prueba."
+      "precio": 12000,
+      "descripcion": "Laptop HP i5"
     },
     {
-      "id": 3,
+      "id": "bbf9df4b-5e4c-4db7-b9fa-7f4f250b3901",
       "url": "assets/img/productos/laptops/asusgamer.jpg",
       "categoria": "laptops",
       "nombre": "Asus Gamer",
-      "precio": 17000,
-      "descripcion": "Laptop marca fulana, texto de prueba."
+      "precio": 19000,
+      "descripcion": "Laptop Asus Gamer i7"
     },
     {
-      "id": 4,
+      "id": "cf6ba806-2243-4699-9410-4916c712c98e",
       "url": "assets/img/productos/laptops/asusi5.jpg",
       "categoria": "laptops",
       "nombre": "Asus i5",
-      "precio": 9000,
-      "descripcion": "Laptop marca fulana, texto de prueba."
+      "precio": 13000,
+      "descripcion": "Laptop Asus i5"
     },
     {
-      "id": 5,
+      "id": "ae300772-d9c0-4a17-9350-3c7d7503585e",
       "url": "assets/img/productos/laptops/acergamer.jpg",
       "categoria": "laptops",
       "nombre": "Acer Gamer",
-      "precio": 15000,
-      "descripcion": "Laptop marca fulana, texto de prueba."
+      "precio": 16500,
+      "descripcion": "Laptop Acer Gamer"
     },
     {
-      "id": 6,
+      "id": "ef7bf146-43b6-4773-abbc-709c4a684547",
       "url": "assets/img/productos/laptops/aceri7.jpg",
       "categoria": "laptops",
-      "nombre": "Acer i5",
-      "precio": 10000,
-      "descripcion": "Laptop marca fulana, texto de prueba."
+      "nombre": "Acer i7",
+      "precio": 15000,
+      "descripcion": "Laptop Acer i7"
+    },
+    {
+      "id": "46d3895e-b4a2-4c1c-83d5-ed743f419a31",
+      "url": "assets/img/productos/laptops/asusi5.jpg",
+      "categoria": "laptops",
+      "nombre": "Laptop sin nombre",
+      "precio": 1200,
+      "descripcion": "Sin nombre"
     }
   ]
 }
