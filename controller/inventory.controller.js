@@ -4,7 +4,9 @@ const crearInventario = (id, url, categoria, nombre, precio, descripcion) => {
     const tarjeta = document.createElement("div");
     tarjeta.classList.add("inventory__card");
    
-    const contenido = `<img src="${url}" alt="" class="inventory__img">
+    const contenido = ` <div class="inventory__container__img">
+                            <img src="${url}" alt="" class="inventory__img">
+                        <div>
                         <div class="inventory__conainer__btn">
                             <button href="../edit.html?id=${id}" type="button" class="inventory__actualizar"" id="${id}">
                                 <span class="material-symbols-outlined">edit</span>
@@ -26,14 +28,16 @@ const crearInventario = (id, url, categoria, nombre, precio, descripcion) => {
     let categoriaProducto = tarjeta.querySelector(".inventory__data__categoria");
 
     btnEliminar.addEventListener("click", async () => {
+        const confirmacion = confirm("¿Estás seguro que deseas eliminar el producto?");
         let id = btnEliminar.id;
         let idCategoria = categoriaProducto.id;
-
-        try{
-            const respuesta = await productoServices.eliminarProducto(id, idCategoria);
-            console.log(respuesta);
-        }catch(error){
-            console.error(error);
+        if(confirmacion){
+            try{
+                const respuesta = await productoServices.eliminarProducto(id, idCategoria);
+                console.log(respuesta);
+            }catch(error){
+                console.error(error);
+            }
         }
     })
 

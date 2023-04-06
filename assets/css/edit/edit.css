@@ -77,6 +77,11 @@
     cursor: pointer;
 }
 
+.edit__input.incorrecto{
+    background: #f1d2d2;
+    color: #FF0000;
+}
+
 @media (max-width: 530px){
     .edit__section{
         height: auto;

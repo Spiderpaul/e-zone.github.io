@@ -14,11 +14,20 @@ formAdd.addEventListener("submit", async (event) => {
     let id = getUUID();
     let urlFile;
     let precio = parseInt(precioadd);
-
+    console.log(url.value);
+    
     if(categoria == "consolas"){
-        urlFile = `assets/img/productos/consolas/${url.files[0].name}`;
+        if(!url.value){
+            urlFile = `assets/img/productos/no-foto.jpg`;
+        }else{
+            urlFile = `assets/img/productos/consolas/${url.files[0].name}`;
+        }
     }else if(categoria == "laptops"){
+        if(!url.value){
+            urlFile = `assets/img/productos/no-foto.jpg`;
+        }else{
         urlFile = `assets/img/productos/laptops/${url.files[0].name}`;
+        }
     }
     
 

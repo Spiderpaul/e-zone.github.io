@@ -22,7 +22,7 @@
 .consolas__title{
     color: #0072C6;
     font-size: 22px;
-    font-weight: 800;
+    font-weight: 700;
 }
 
 .consolas__container__add{
@@ -52,6 +52,7 @@
 }
 
 .consolas__card{
+    position: relative;
     background: white;
     width: 15%;
     height: auto;
@@ -61,6 +62,25 @@
     align-items: center;
     border-radius: 2px;
     box-shadow: 0 0 1px 1px rgba(123, 144, 253, 0.2);
+}
+
+.consolas__btn{
+    background: #FFA500;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    z-index: 1;
+    visibility: hidden;
+    box-shadow: 0 0 5px 1px rgba(123, 144, 253, 0.2);
+    cursor: pointer;
+}
+
+.material-symbols-outlined{
+    color: white;
 }
 
 .consolas__card .hidden{
@@ -75,9 +95,21 @@
 }
 
 .consolas__card:hover{
-    box-shadow: 0 0 14px 1px rgba(248, 186, 14, 1);
-    cursor: pointer;
+    box-shadow: 0 0 10px 1px rgba(123, 144, 253, 0.2);
 }
+
+.consolas__card:hover .consolas__btn{
+    visibility: visible;
+}
+
+.consolas__btn:hover{
+    background: #0072C6;
+}
+
+.consolas__card .hidden{
+    display: block;
+}
+
 
 /*                                           Datos del artículo                                  */
 .consolas__container__data{
@@ -86,7 +118,7 @@
     padding: 20px 0;
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: center;
     justify-content: space-between;
 }
 
@@ -104,6 +136,22 @@
 .consolas__data__link{
     text-decoration: none;
     font-size: 18px;
+}
+
+.consolas__btn__watch{
+    background: #0072C6;
+    color: white;
+    width: 80%;
+    height: 40px;
+    margin: auto;
+    border: none;
+    border-radius: 20px;
+    align-self: flex-end;
+}
+
+.consolas__btn__watch:hover{
+    background: #FFA500;
+    cursor: pointer;
 }
 
 @media (max-width: 1300px){

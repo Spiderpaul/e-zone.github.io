@@ -29,7 +29,7 @@
       "url": "assets/img/productos/consolas/switch.jpg",
       "categoria": "consolas",
       "nombre": "Switch",
-      "precio": 9000,
+      "precio": 11000,
       "descripcion": "Nintendo Switch, descripción del producto"
     },
     {
@@ -47,14 +47,6 @@
       "nombre": "Switch Oled ",
       "precio": 11000,
       "descripcion": "Nintendo Switch Oled, descripción del producto"
-    },
-    {
-      "id": "ff02cdc3-18a2-48dc-9e14-5bab5b4e52a1",
-      "url": "assets/img/productos/consolas/play5digital.jpg",
-      "categoria": "consolas",
-      "nombre": "Play Station 5 Digital",
-      "precio": 10000,
-      "descripcion": "Play Station 5 Digital, descripción del producto"
     }
   ],
   "laptops": [
@@ -71,7 +63,7 @@
       "url": "assets/img/productos/laptops/hpi5.jpg",
       "categoria": "laptops",
       "nombre": "HP i5",
-      "precio": 12000,
+      "precio": 13000,
       "descripcion": "Laptop HP i5"
     },
     {
@@ -105,14 +97,6 @@
       "nombre": "Acer i7",
       "precio": 15000,
       "descripcion": "Laptop Acer i7"
-    },
-    {
-      "id": "46d3895e-b4a2-4c1c-83d5-ed743f419a31",
-      "url": "assets/img/productos/laptops/asusi5.jpg",
-      "categoria": "laptops",
-      "nombre": "Laptop sin nombre",
-      "precio": 1200,
-      "descripcion": "Sin nombre"
     }
   ]
 }

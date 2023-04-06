@@ -86,6 +86,11 @@
     cursor: pointer;
 }
 
+.incorrecto{
+    background: #eb9c9c;
+    color: #FF0000;
+}
+
 @media (max-width: 1037px){
     .contact__subcontainer{
         width: 50%;

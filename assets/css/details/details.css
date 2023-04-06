@@ -43,6 +43,7 @@
 }
 
 .details__title{
+    font-size: 30px;
     margin: 0;
 }
 
@@ -54,5 +55,12 @@
 
 .details__description{
     font-size: 20px;
+}
+
+@media (max-width: 840px){
+    .details__title{
+        font-size: 25px;
+        margin-top: 10px;
+    }
 }
 
